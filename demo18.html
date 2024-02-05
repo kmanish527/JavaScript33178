@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //arrays
+            document.writeln("<u>Demo on array</u></br>")
+            const s = [34,67,89]//same type of elements homo
+            //array is constant therefore s=a is not possible
+            document.writeln(s+"</br>")
+            document.writeln(typeof(s)+"</br>")
+            document.writeln(s.length+"</br>")
+            document.writeln(s[0]+"</br>")
+            document.writeln(s[2]+"</br>")
+            document.writeln(s[5]+"</br>")
+            document.writeln(typeof s[0]+"</br>")
+            s[1]=50
+            s[2]="CSE"
+            document.writeln(s+"</br>")//hetro
+            s.push("mswd")
+            s.push(100)
+            document.writeln(s+"</br>")
+            document.writeln(s.length+"</br>")
+            s.pop()
+            document.writeln(s+"</br>")
+            document.writeln(s.length+"</br>")
+            // s[10]="cse"
+            document.writeln(s+"</br>")
+            document.writeln(s.length+"</br>")
+            document.writeln(s.reverse()+"</br>")//only display not getting physically modified
+            document.writeln(s.sort()+"</br>")//first string then numbers
+            let element = s.shift()//removes first element from array and returns it
+            document.writeln(element+"</br>")
+            document.writeln("After shifting = "+s+"</br>")
+            let len = s.unshift(100.5)//unshift add in first and returns the lenghth of array 
+            document.writeln(len+"</br>")
+            document.writeln("After Unshifting = "+s+"</br>")
+            let len1 = s.unshift("aws",31,"pfsd")//same order
+            document.writeln("After unshifting = "+s+"</br>")
+            document.writeln(len1+"</br>")
+            document.writeln("<u>display array elements using for loop</u></br>")
+            for(let i=0;i<s.length;i++){
+                document.writeln(s[i]+"</br>")
+            }
+            document.writeln("<u>display array elements using for in loop</u></br>")
+            for(let i in s){//gives the index
+                document.writeln(s[i]+"</br>")
+            }
+            document.writeln("<u> display array elements using for off loop</u></br>")
+            for(let element of s){//gives the element 
+                document.writeln(element+"</br>")
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
